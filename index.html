@@ -77,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-center">لورم ایپسوم متن</h2>
+                    <h2 class="text-center">مهم ترین خدمات ما</h2>
                     <div class="heading-line"></div>
                     <p class="text-center py-3">لورم ایپسوم متن خانگی با تولید سادگی نامفهوم از صنعت چاپ</p>
                 </div>
@@ -250,7 +250,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-center">لورم ایپسوم متن</h2>
+                    <h2 class="text-center">سوالات متداول</h2>
                     <div class="heading-line"></div>
                     <p class="text-center py-3">لورم ایپسوم متن خانگی با تولید سادگی نامفهوم از صنعت چاپ</p>
                 </div>
@@ -261,7 +261,7 @@
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                لورم ایپسوم متن ساختگی 
+                                لورم ایپسوم متن ساختگی
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -317,9 +317,51 @@
 
 
 
+    <!-- PORTFOLIO -->
+
+    <section class="portfolio mt-5" x-data="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">گالری تصاویر</h2>
+                    <div class="heading-line"></div>
+                    <p class="text-center py-3">لورم ایپسوم متن خانگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <template x-for="(tab, index) in tabs" :key="index">
+                        <button class="btn btn-outline-primary me-2" @click="tabName = tab.category" x-text="tab.display_category"></button>
+                    </template>
+                </div>
+            </div>
+            <template x-for="(tab, index) in tabs" :key="index">
+                <div class="row mt-4 gy-lg-3" x-show="tab.category === tabName">
+                    <template x-for="(item, index) in tab.images" :key="index">
+                        <div class="col-md-3 col-lg-4">
+                            <div class="image-box shadow">
+                                <img class="img-fluid rounded" :src="item.image" alt="Nature-1">
+                                <div
+                                    class="image-cover position-absolute d-flex flex-column h-100 w-100 align-items-center start-50 top-50 translate-middle text-center justify-content-center text-white">
+                                    <h4 class="fw-bold" x-text="item.title"></h4>
+                                    <p x-text="item.caption"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+
+
+
     <!-- Scripts -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.3.4/dist/cdn.min.js"></script>
+    <script src="./assets/js/portfolio.js"></script>
     <!-- Scripts -->
 </body>
 

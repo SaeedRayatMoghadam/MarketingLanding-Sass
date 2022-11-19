@@ -1,0 +1,25 @@
+.image-box {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+        transition: all .5s ease;
+    }
+
+    .image-cover {
+        background-color: rgba($color: $primary, $alpha: .60);
+        opacity: 0;
+        transition: all .5s ease;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.5);
+        }
+
+        .image-cover {
+            opacity: 1;
+        }
+    }
+}

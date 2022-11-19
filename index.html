@@ -319,7 +319,7 @@
 
     <!-- PORTFOLIO -->
 
-    <section class="portfolio mt-5" x-data="tabs">
+    <section class="portfolio my-5" x-data="tabs">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -331,12 +331,13 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <template x-for="(tab, index) in tabs" :key="index">
-                        <button class="btn btn-outline-primary me-2" @click="tabName = tab.category" x-text="tab.display_category"></button>
+                        <button class="btn btn-outline-primary me-2" @click="tabName = tab.category"
+                            x-text="tab.display_category"></button>
                     </template>
                 </div>
             </div>
             <template x-for="(tab, index) in tabs" :key="index">
-                <div class="row mt-4 gy-lg-3" x-show="tab.category === tabName">
+                <div class="row mt-4 gy-3" x-show="tab.category === tabName">
                     <template x-for="(item, index) in tab.images" :key="index">
                         <div class="col-md-3 col-lg-4">
                             <div class="image-box shadow">
@@ -355,6 +356,118 @@
     </section>
 
     <!-- PORTFOLIO -->
+
+
+
+
+    <!-- CONTACT -->
+
+    <footer class="bg-black">
+        <div class="container text-white py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-start justify-content-md-center">
+                        <i class="bi bi-phone text-primary fs-1 ms-2"></i>
+                        <div>
+                            <span class="fw-bold">09381610655</span>
+                            <p>شنبه تا پنجشنبه - 8 صبح تا 4 بعداظهر</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-start justify-content-md-center">
+                        <i class="bi bi-envelope text-primary fs-1 ms-2"></i>
+                        <div>
+                            <span class="fw-bold">S.RayatMoghadam@Gmail.Com</span>
+                            <p>پشتیبانی آنلاین</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-start justify-content-md-center">
+                        <i class="bi bi-map-fill text-primary fs-1 ms-2"></i>
+                        <div>
+                            <span class="fw-bold">تهران - ایران</span>
+                            <p>آدرس</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="socials">
+            <div class="container">
+                <div class="row text-center align-items-center justify-content-center py-4 gy-2">
+                    <div class="col-md-6">
+                        <p class="text-white mb-0 fw-bold">ما را در شبکه های اجتماعی دنبال کنید</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#"><i class="bi bi-facebook fs-3 ms-1"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-3 ms-1"></i></a>
+                        <a href="#"><i class="bi bi-github fs-3 ms-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-3 ms-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-3 ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-white">
+            <div class="row mt-4 gy-3">
+                <div class="col-12 col-lg-5 offset-lg-1 text-white">
+                    <h5 class="fw-bold">سعید رعیت مقدم</h5>
+                    <hr>
+                    <p>لورم ایپسوم متن خانگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        طراحان گرافیک است.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>محصولات</h5>
+                    <hr>
+                    <ul class="list-unstyled pe-0">
+                        <li class="mt-2">لورم ایپسوم</li>
+                        <li>لورم ایپسوم</li>
+                        <li>لورم ایپسوم</li>
+                        <li>لورم ایپسوم</li>
+                        <li>لورم ایپسوم</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>خدمات</h5>
+                    <hr>
+                    <ul class="list-unstyled pe-0">
+                        <li class="mt-2">طراحی سایت</li>
+                        <li>طراحی لوگو</li>
+                        <li>برنامه نویسی</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>تماس با ما</h5>
+                    <hr>
+                    <ul class="list-unstyled pe-0">
+                        <li class="mt-2" dir="ltr">+98 938 161 0655</li>
+                        <li>S.RayatMoghadam@Gmail.Com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row text-center text-white p-3">
+                    <h5 class="fs-6">&copy; تمامی حقوق مادی و معنوی این اثر مطعلق به <a
+                            class="text-white text-decoration-none fs-5"
+                            href="https://github.com/SaeedRayatMoghadam">سعید رعیت مقدم</a> میباشد</h5>
+                    <div class="col-12"></div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="shadow btn-primary rounded-circle d-flex align-items-center justify-content-center back-to-top"><i class="bi bi-arrow-up-circle"></i></a>
+
+    </footer>
+
+    <!-- CONTACT -->
 
 
 

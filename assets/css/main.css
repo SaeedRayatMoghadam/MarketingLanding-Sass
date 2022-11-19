@@ -7812,14 +7812,40 @@ textarea.form-control-lg {
 body {
   font-family: "Vazir" !important; }
 
-.btn-rounded-primary {
+.btn-rounded-custom {
   background-color: #fff;
   border-radius: 50px;
   color: #000;
   border: 1px solid rgba(255, 255, 255, 0.6);
   transition: all .3s ease; }
-  .btn-rounded-primary:hover {
+  .btn-rounded-custom:hover {
     background-color: #f8f9fa; }
+
+.btn-rounded-primary {
+  background-color: #0083b0;
+  border-radius: 50px;
+  color: #fff;
+  border: 1px solid rgba(0, 180, 219, 0.6);
+  transition: all .3s ease; }
+  .btn-rounded-primary:hover {
+    background-color: #00b4db;
+    color: #fff; }
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #0083b0; }
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  height: 0.4rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #0083b0; }
 
 .top-menu {
   background: #00b4db;
@@ -7837,3 +7863,45 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0083b0, #00b4db);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+@media screen and (max-width: 768px) {
+  .intro-img {
+    width: 350px; } }
+
+@media screen and (max-width: 1022px) {
+  .intro-img {
+    width: 400px; } }
+
+@media screen and (max-width: 768px) {
+  .splitter {
+    border: 0 !important;
+    border-bottom: 1px solid #dee2e6 !important; } }
+
+.services i {
+  background: #00b4db;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083b0, #00b4db);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083b0, #00b4db);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.comments {
+  background: #00b4db;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083b0, #00b4db);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083b0, #00b4db);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.comment-card {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px; }
+
+.comment-card h4, .comment-card .h4 {
+  padding: 10px 0; }

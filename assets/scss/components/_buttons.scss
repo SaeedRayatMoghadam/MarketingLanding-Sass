@@ -1,4 +1,4 @@
-.btn-rounded-primary{
+.btn-rounded-custom{
     background-color: $white;
     border-radius: 50px;
     color: #000;
@@ -7,5 +7,18 @@
 
     &:hover{
         background-color: $gray-100;
+    }
+}
+
+.btn-rounded-primary{
+    background-color: $primary;
+    border-radius: 50px;
+    color: #fff;
+    border: 1px solid rgba($color: $secondary, $alpha: .6);
+    transition: all .3s ease;
+
+    &:hover{
+        background-color: $secondary;
+        color: #fff;
     }
 }

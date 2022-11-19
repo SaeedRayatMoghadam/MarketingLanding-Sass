@@ -1,13 +1,16 @@
 //Custom Variables
 $primary: #0083b0;
 $secondary : #00b4db;
-
+ 
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
     
 @import './fonts';
-@import './components/Mixins'; 
-@import './components/buttons'; 
+@import './components/_Mixins'; 
+@import './components/_buttons';    
+@import './components/_heading-line'; 
 @import './sections/_navbar';  
 @import './sections/_intro';  
+@import './sections/_services';    
+@import './sections/_comments';     

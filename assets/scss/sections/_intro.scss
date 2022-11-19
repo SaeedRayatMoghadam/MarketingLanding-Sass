@@ -2,3 +2,12 @@
     padding-top: 6rem;
     @include gradient
 }
+
+.intro-img{
+    @media screen and (max-width: 768px) {
+        width: 350px;
+    }
+    @media screen and (max-width: 1022px) {
+        width: 400px;
+    }
+}

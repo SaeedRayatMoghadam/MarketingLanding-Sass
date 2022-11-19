@@ -1,0 +1,14 @@
+.comments{
+    @include gradient;
+}
+
+.comment-card{
+    background-color: $gray-100;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.comment-card h4{
+    padding: 10px 0;
+}

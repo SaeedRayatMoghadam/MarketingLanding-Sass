@@ -7905,3 +7905,7 @@ body {
 
 .comment-card h4, .comment-card .h4 {
   padding: 10px 0; }
+
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0; }

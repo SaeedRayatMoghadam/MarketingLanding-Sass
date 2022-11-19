@@ -6,7 +6,8 @@ $secondary : #00b4db;
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
     
+@import './fonts';
 @import './components/Mixins'; 
 @import './components/buttons'; 
-@import './navbar'; 
-@import './fonts';
+@import './sections/_navbar';  
+@import './sections/_intro';  

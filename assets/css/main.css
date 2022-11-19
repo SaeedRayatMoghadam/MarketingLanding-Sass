@@ -7804,6 +7804,14 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot") format("embedded-opentype"), url("../fonts/Vazir.woff") format("woff"), url("../fonts/Vazir.woff2") format("woff2"), url("../fonts/Vazir.ttf") format("truetype"); }
+
+body {
+  font-family: "Vazir" !important; }
+
 .btn-rounded-primary {
   background-color: #fff;
   border-radius: 50px;
@@ -7821,10 +7829,11 @@ textarea.form-control-lg {
   background: linear-gradient(to right, #0083b0, #00b4db);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
-@font-face {
-  font-family: "Vazir";
-  src: url("../fonts/Vazir.eot");
-  src: url("../fonts/Vazir.eot") format("embedded-opentype"), url("../fonts/Vazir.woff") format("woff"), url("../fonts/Vazir.woff2") format("woff2"), url("../fonts/Vazir.ttf") format("truetype"); }
-
-body {
-  font-family: "Vazir" !important; }
+.intro {
+  padding-top: 6rem;
+  background: #00b4db;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083b0, #00b4db);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083b0, #00b4db);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
